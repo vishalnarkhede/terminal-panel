@@ -17,8 +17,13 @@ terminal or command line interface.
 ![alt text](https://github.com/vishalnarkhede/terminal-panel/blob/master/screenshots/screenshot1.png "Logo Title Text 1")
 
 ### Usage
+* Add terminalPanel.js
 
-Firstly you need to inject the module "terminalPanel", in your app module as follow:
+````html
+    <script src="terminalPanel.js"></script>
+
+````
+* Inject the module "terminalPanel", in your app module as follow:
 
 ````javascript
     angular.module('sampleAppModule', ['terminalPanel'])
@@ -28,7 +33,7 @@ Firstly you need to inject the module "terminalPanel", in your app module as fol
         });
 
 ````
-Usage of this directive is farely simple. It can be used in 2 ways:
+* Usage of the directive is farely simple. It can be used in 2 ways:
 
 1. **Binding**:
      You can bind a scopre variable of your controlle rto this directive
