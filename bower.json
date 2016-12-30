@@ -4,12 +4,11 @@
   "authors": [
     "vishalnarkhede.iitd@gmail.com"
   ],
-  "moduleType": [
-    "node"
-  ],
   "ignore": [
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "sample",
+    "screenshots"
   ],
   "dependencies": {
     "angular": ">=1.2.0"
