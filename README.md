@@ -36,11 +36,11 @@ terminal or command line interface.
 * Usage of the directive is farely simple. It can be used in 2 ways:
 
   * **Binding**:
-     You can bind a scopre variable of your controller to this directive via attribute terminal-panel-msg.
+     You can bind a scopre variable of your controller to this directive via attribute `terminal-panel-msg`.
      As soon as scope variable (msg) changes, it will reflect on terminal panel.
-     If you provide enable-msg-queue="true". Then terminal panel will wait for
+     If you provide `enable-msg-queue="true"`. Then terminal panel will wait for
      current message being typed, to finish. And after that, it will start typing
-     new message (from scope variable which is provided in attribute terminal-panel-msg).
+     new message (from scope variable which is provided in attribute `terminal-panel-msg`).
      Example:
 
     ```html
@@ -56,9 +56,9 @@ terminal or command line interface.
 
   * **Event**:
      You can broadcast an event 'terminalPanel:change' or `terminalPanel.<id>:change`.
-     terminalPanel:change - will change the message on all the panels present on page.
-     terminalPanel.`<id>`:change - will change the message on panel with id as <id>.
-                                 <id> is provided through attribute aterminal-id
+     `terminalPanel:change` - will change the message on all the panels present on page.
+     `terminalPanel.<id>:change` - will change the message on panel with id as `<id>`.
+                                 `<id>` is provided through attribute `terminal-id`
                                      .
      Example:
     ```javascript
