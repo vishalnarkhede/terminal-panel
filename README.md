@@ -18,6 +18,16 @@ terminal or command line interface.
 
 ### Usage
 
+Firstly you need to inject the module "terminalPanel", in your app module as follow:
+
+````javascript
+    angular.module('sampleAppModule', ['terminalPanel'])
+        .controller('sampleAppController', function ($scope, $interval, $rootScope) {
+            ...
+            ...
+        });
+
+````
 Usage of this directive is farely simple. It can be used in 2 ways:
 
 1. **Binding**:
