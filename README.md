@@ -17,33 +17,33 @@ terminal or command line interface.
 ![alt text](https://github.com/vishalnarkhede/terminal-panel/blob/master/screenshots/screenshot1.png "Logo Title Text 1")
 
 ### Usage
-* Add terminalPanel.js
+* Add terminalPanel.js and angularjs
 
-````html
+```html
+    <script src="angular.min.js"></script>
     <script src="terminalPanel.js"></script>
 
-````
+```
 * Inject the module "terminalPanel", in your app module as follow:
 
-````javascript
+```javascript
     angular.module('sampleAppModule', ['terminalPanel'])
         .controller('sampleAppController', function ($scope, $interval, $rootScope) {
             ...
             ...
         });
-
-````
+```
 * Usage of the directive is farely simple. It can be used in 2 ways:
 
-**Binding**:
-     You can bind a scopre variable of your controlle rto this directive
-     via attribute `terminal-panel-msg`.
+  * **Binding**:
+     You can bind a scopre variable of your controller to this directive via attribute terminal-panel-msg.
      As soon as scope variable (msg) changes, it will reflect on terminal panel.
-     If you provide `enable-msg-queue="true"`. Then terminal panel will wait for
+     If you provide enable-msg-queue="true". Then terminal panel will wait for
      current message being typed, to finish. And after that, it will start typing
-     new message (from scope variable which is provided in attribute `terminal-panel-msg`).
+     new message (from scope variable which is provided in attribute terminal-panel-msg).
      Example:
-````html
+
+    ```html
     <div ng-controller="demoController">
        <terminal-panel
                terminal-panel-msg="panelMessage"
@@ -52,24 +52,26 @@ terminal or command line interface.
        </terminal-panel>
        <button ng-click="nextMessage()">Show next message</button>
     </div>
+    ```
 
-**Event**:
-     You can broadcast an event 'terminalPanel:change' or 'terminalPanel.<id>:change'.
+  * **Event**:
+     You can broadcast an event 'terminalPanel:change' or `terminalPanel.<id>:change`.
      terminalPanel:change - will change the message on all the panels present on page.
-     terminalPanel.<id>:change - will change the message on panel with id as <id>.
-                                 <id> is provided through attribute aterminal-id`.
+     terminalPanel.`<id>`:change - will change the message on panel with id as <id>.
+                                 <id> is provided through attribute aterminal-id
+                                     .
      Example:
-````javascript
-       $rootScope.$broadcast('terminalPanel:change', {
-           msg: "This is the next message." +
-              "This needs to be displayed or typed on all terminal panels on page."
-       });
-       $rootScope.$broadcast('terminalPanel.terminal1:change', {
-           msg: "This is the next message." +
-              "This needs to be displayed or typed only on terminal panel with id as 'terminal1'"
-       });
-````
-Following attributes are supported by this directive:
+    ```javascript
+           $rootScope.$broadcast('terminalPanel:change', {
+               msg: "This is the next message." +
+                  "This needs to be displayed or typed on all terminal panels on page."
+           });
+           $rootScope.$broadcast('terminalPanel.terminal1:change', {
+               msg: "This is the next message." +
+                  "This needs to be displayed or typed only on terminal panel with id as 'terminal1'"
+           });
+    ```
+* Following attributes are supported by this directive:
 
 1. **terminal-width**: Width of the panel (default: 100%)
 2. **terminal-height**: Height of the panel (default: auto)
