@@ -1,11 +1,22 @@
 # terminal-panel
 
+### Requirements
+
+* AngularJS greater than version 1.2.0
+
+### Highlights
+
 terminalPanel directive creates an element or panel which looks similar to
 
 terminal or command line interface.
-    - Lookwise
-    - typing effect
-    - blinking cursor
+
+* Lookwise
+* typing effect
+* blinking cursor
+
+![alt text](https://github.com/vishalnarkhede/terminal-panel/blob/master/screenshots/screenshot1.png "Logo Title Text 1")
+
+### Usage
 
 Usage of this directive is farely simple. It can be used in 2 ways:
 
