@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="/assets/custom-style.css" /> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+        <script src="terminalPanel.js"></script>
+    </head>
+    <style>
+    </style>
+        <body ng-app="terminalPanel">
+            <div ng-controller="demoController">
+                <terminal-panel
+                        terminal-panel-msg="dummyText"
+                        terminal-width="400px"
+                        terminal-height="50%"
+                        terminal-background="white"></terminal-panel>
+                <button ng-click="nextMessage()">Show next message</button>
+            </div>
+        </body>
+</html>

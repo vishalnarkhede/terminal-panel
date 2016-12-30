@@ -1,0 +1,17 @@
+{
+  "name": "terminal-panel",
+  "main": "TerminalPanel.js",
+  "authors": [
+    "vishalnarkhede.iitd@gmail.com"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0"
+  }
+}
