@@ -35,7 +35,7 @@ terminal or command line interface.
 ````
 * Usage of the directive is farely simple. It can be used in 2 ways:
 
-1. **Binding**:
+**Binding**:
      You can bind a scopre variable of your controlle rto this directive
      via attribute `terminal-panel-msg`.
      As soon as scope variable (msg) changes, it will reflect on terminal panel.
@@ -52,8 +52,8 @@ terminal or command line interface.
        </terminal-panel>
        <button ng-click="nextMessage()">Show next message</button>
     </div>
-````
-2. **Event**:
+
+**Event**:
      You can broadcast an event 'terminalPanel:change' or 'terminalPanel.<id>:change'.
      terminalPanel:change - will change the message on all the panels present on page.
      terminalPanel.<id>:change - will change the message on panel with id as <id>.
