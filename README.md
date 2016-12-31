@@ -17,6 +17,15 @@ terminal or command line interface.
 ![alt text](https://github.com/vishalnarkhede/terminal-panel/blob/master/screenshots/screenshot1.png "Logo Title Text 1")
 
 ### Usage
+* `terminal-panel` is available on bower as well.
+  * Add it your dependancies in `bower.json`
+  ```json
+  "dependencies": {
+    "terminal-panel": "latest"
+  }
+  ```
+  * Install it seperately - `bower install terminal-panel`
+
 * Add terminalPanel.js and angularjs
 
 ```html
