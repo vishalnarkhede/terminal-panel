@@ -1,5 +1,5 @@
 # terminal-panel
-## Basic terminal/command-line simulator using AngularJS
+## Basic terminal/command-line emulator using AngularJS
 
 ### Requirements
 
